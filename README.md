@@ -2,11 +2,11 @@
 
 This project is part of the FociPy projects. To find out more, checkout [focipy/core](https://github.com/focipy/core) on GitHub.
 
- - [ ] add to `focpiy/core/future`
- - [ ] create project repository
- - [ ] program completes first pass
- - [ ] update `./README.md` with the startup guide
- - [ ] create a tutorial at `./tutorial/`
+- [x] add to `focpiy/core/future`
+- [x] create project repository
+- [x] program completes first pass
+- [ ] update `./README.md` with the startup guide
+- [ ] create a tutorial at `./tutorial/`
 
 ## Overview
 
