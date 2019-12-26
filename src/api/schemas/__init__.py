@@ -1,0 +1,1 @@
+from .shorty import ShortyPostSchema

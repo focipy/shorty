@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Shorty - The Simple URL shortener!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome to Shorty!</h3>
+              <p>
+              Shorty can shorten evey URL for you! You can add your own custom url to avoid random characters if you like.
+              </p>
+              <form>
+                <div class="form-label-group">
+                  <input type="url" id="inputUrl" class="form-control" placeholder="URL ro Shorten" required autofocus>
+                  <label for="inputUrl">URL to Shorten</label>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="string" id="inputCustom" class="form-control" placeholder="Custom URL (optional)">
+                  <label for="inputCustom">Custom URL (optional)</label>
+                </div>
+<!--                <div class="custom-control custom-checkbox mb-3">-->
+<!--                  <input type="checkbox" class="custom-control-input" id="customCheck1">-->
+<!--                  <label class="custom-control-label" for="customCheck1">Delete After viewing once.</label>-->
+<!--                </div>-->
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Go Shorty!</button>
+              </form>
+              <br>
+              <div id="alertSuccess" class="alert alert-success" role="alert" style="display:none;"></div>
+              <div id="alertError" class="alert alert-danger" role="alert" style="display:none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
